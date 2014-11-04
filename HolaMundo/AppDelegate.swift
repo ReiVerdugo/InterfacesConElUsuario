@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HolaMundo
 //
-//  Created by Reinaldo Verdugo on 28/09/14.
+//  Created by Reinaldo Verdugo and Ramon Marquez on 28/09/14.
 //  Copyright (c) 2014 ___PruebaCorp___. All rights reserved.
 //
 

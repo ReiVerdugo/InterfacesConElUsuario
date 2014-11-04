@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F65645D19D8C40200794B3A"
-               BuildableName = "HolaMundo.app"
+               BuildableName = "PerfectPhoto.app"
                BlueprintName = "HolaMundo"
-               ReferencedContainer = "container:HolaMundo.xcodeproj">
+               ReferencedContainer = "container:PerfectPhoto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "0F65647219D8C40300794B3A"
                BuildableName = "HolaMundoTests.xctest"
                BlueprintName = "HolaMundoTests"
-               ReferencedContainer = "container:HolaMundo.xcodeproj">
+               ReferencedContainer = "container:PerfectPhoto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "0F65647219D8C40300794B3A"
                BuildableName = "HolaMundoTests.xctest"
                BlueprintName = "HolaMundoTests"
-               ReferencedContainer = "container:HolaMundo.xcodeproj">
+               ReferencedContainer = "container:PerfectPhoto.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F65645D19D8C40200794B3A"
-            BuildableName = "HolaMundo.app"
+            BuildableName = "PerfectPhoto.app"
             BlueprintName = "HolaMundo"
-            ReferencedContainer = "container:HolaMundo.xcodeproj">
+            ReferencedContainer = "container:PerfectPhoto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F65645D19D8C40200794B3A"
-            BuildableName = "HolaMundo.app"
+            BuildableName = "PerfectPhoto.app"
             BlueprintName = "HolaMundo"
-            ReferencedContainer = "container:HolaMundo.xcodeproj">
+            ReferencedContainer = "container:PerfectPhoto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F65645D19D8C40200794B3A"
-            BuildableName = "HolaMundo.app"
+            BuildableName = "PerfectPhoto.app"
             BlueprintName = "HolaMundo"
-            ReferencedContainer = "container:HolaMundo.xcodeproj">
+            ReferencedContainer = "container:PerfectPhoto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
