@@ -47,13 +47,18 @@ class ViewRegister: UIViewController {
     @IBAction func emailFilled(sender: UITextField) {
     }
     
+    // Acción para verificar las credenciales
     @IBAction func verifyCredentials(sender: UIButton) {
         
+        // Hacemos desaparecer cualquier alerta
+        // activada por alguna acción anterior
         usrnameAllert.textColor = UIColor.whiteColor()
         passwordAllert.textColor = UIColor.whiteColor()
         confirmAllert.textColor = UIColor.whiteColor()
         emailAllert.textColor = UIColor.whiteColor()
         
+        
+        // Verificamos si algún campo de texto quedó vacío
         if (usrnameTextfield.text == "") || (passwrdTextfield.text == "")
         || (confirmpasswordTextfield.text == "") || (emailTextfield.text == "")
         {
@@ -89,7 +94,6 @@ class ViewRegister: UIViewController {
            performSegueWithIdentifier("SuccesReg", sender: self)
         }
     }
-    // Acción para verificar las credenciales
 
     
     override func viewDidLoad() {

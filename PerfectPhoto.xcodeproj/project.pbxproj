@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F27C6531A07D1CB004A2355 /* ViewLoggingIn.swift */; };
 		0F27C6561A07DB38004A2355 /* ViewRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F27C6551A07DB38004A2355 /* ViewRegister.swift */; };
+		0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C062F1A093557009B27EE /* ViewPhoto.swift */; };
+		0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C06311A093808009B27EE /* ViewGallery.swift */; };
 		0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */; };
+		0F4E23F91A0881B800CED293 /* RecoverPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E23F81A0881B800CED293 /* RecoverPassword.swift */; };
 		0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65646319D8C40200794B3A /* AppDelegate.swift */; };
 		0F65646619D8C40200794B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65646519D8C40200794B3A /* ViewController.swift */; };
 		0F65646919D8C40200794B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646719D8C40200794B3A /* Main.storyboard */; };
@@ -31,7 +34,10 @@
 /* Begin PBXFileReference section */
 		0F27C6531A07D1CB004A2355 /* ViewLoggingIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewLoggingIn.swift; path = ../ViewLoggingIn.swift; sourceTree = "<group>"; };
 		0F27C6551A07DB38004A2355 /* ViewRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewRegister.swift; path = ../ViewRegister.swift; sourceTree = "<group>"; };
+		0F4C062F1A093557009B27EE /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPhoto.swift; path = ../ViewPhoto.swift; sourceTree = "<group>"; };
+		0F4C06311A093808009B27EE /* ViewGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewGallery.swift; path = ../ViewGallery.swift; sourceTree = "<group>"; };
 		0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccesfullRegister.swift; path = ../SuccesfullRegister.swift; sourceTree = "<group>"; };
+		0F4E23F81A0881B800CED293 /* RecoverPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecoverPassword.swift; path = ../RecoverPassword.swift; sourceTree = "<group>"; };
 		0F65645E19D8C40200794B3A /* PerfectPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F65646219D8C40200794B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F65646319D8C40200794B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +51,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F65645B19D8C40200794B3A /* Frameworks */ = {
+		0F0497D71A0940E900D22DE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,12 +89,15 @@
 		0F65646019D8C40200794B3A /* HolaMundo */ = {
 			isa = PBXGroup;
 			children = (
+				0F65646719D8C40200794B3A /* Main.storyboard */,
 				0F65646319D8C40200794B3A /* AppDelegate.swift */,
 				0F65646519D8C40200794B3A /* ViewController.swift */,
 				0F27C6531A07D1CB004A2355 /* ViewLoggingIn.swift */,
 				0F27C6551A07DB38004A2355 /* ViewRegister.swift */,
 				0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */,
-				0F65646719D8C40200794B3A /* Main.storyboard */,
+				0F4E23F81A0881B800CED293 /* RecoverPassword.swift */,
+				0F4C06311A093808009B27EE /* ViewGallery.swift */,
+				0F4C062F1A093557009B27EE /* ViewPhoto.swift */,
 				0F65646A19D8C40200794B3A /* Images.xcassets */,
 				0F65646C19D8C40200794B3A /* LaunchScreen.xib */,
 				0F65646119D8C40200794B3A /* Supporting Files */,
@@ -129,9 +138,9 @@
 			buildConfigurationList = 0F65647D19D8C40300794B3A /* Build configuration list for PBXNativeTarget "HolaMundo" */;
 			buildPhases = (
 				0F65645A19D8C40200794B3A /* Sources */,
-				0F65645B19D8C40200794B3A /* Frameworks */,
 				0F65645C19D8C40200794B3A /* Resources */,
 				50524F424C454D533F /* ShellScript */,
+				0F0497D71A0940E900D22DE3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,10 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F65646619D8C40200794B3A /* ViewController.swift in Sources */,
+				0F4E23F91A0881B800CED293 /* RecoverPassword.swift in Sources */,
 				0F27C6561A07DB38004A2355 /* ViewRegister.swift in Sources */,
 				0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */,
+				0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */,
 				0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */,
 				0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */,
+				0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

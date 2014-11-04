@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>166252A2-669F-4638-96F4-F340C709A1AE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PerfectPhoto</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AC2EBB29436447A3B18F94B2286CCFD45EF6086</key>
+		<string>https://github.com/ReiVerdugo/InterfacesConElUsuario.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PerfectPhoto.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AC2EBB29436447A3B18F94B2286CCFD45EF6086</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ReiVerdugo/InterfacesConElUsuario.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AC2EBB29436447A3B18F94B2286CCFD45EF6086</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AC2EBB29436447A3B18F94B2286CCFD45EF6086</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HolaMundo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
