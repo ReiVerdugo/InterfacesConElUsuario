@@ -87,6 +87,8 @@ class ViewRegister: UIViewController {
             label.text = "Las contraseñas no coinciden."
             passwordAllert.textColor = UIColor.redColor()
             confirmAllert.textColor = UIColor.redColor()
+            passwrdTextfield.text = ""
+            confirmpasswordTextfield.text = ""
         }
         
         else
