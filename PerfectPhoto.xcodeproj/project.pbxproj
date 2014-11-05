@@ -19,6 +19,8 @@
 		0F65646B19D8C40200794B3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646A19D8C40200794B3A /* Images.xcassets */; };
 		0F65646E19D8C40200794B3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646C19D8C40200794B3A /* LaunchScreen.xib */; };
 		0F65647A19D8C40300794B3A /* HolaMundoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65647919D8C40300794B3A /* HolaMundoTests.swift */; };
+		0FA7AFB61A09916600526C84 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA7AFB51A09916500526C84 /* Photos.framework */; };
+		0FA7AFB81A09A50400526C84 /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA7AFB71A09A50400526C84 /* PhotoThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,20 +50,23 @@
 		0F65647319D8C40300794B3A /* HolaMundoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaMundoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F65647819D8C40300794B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F65647919D8C40300794B3A /* HolaMundoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaMundoTests.swift; sourceTree = "<group>"; };
+		0FA7AFB51A09916500526C84 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		0FA7AFB71A09A50400526C84 /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoThumbnail.swift; path = ../PhotoThumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F0497D71A0940E900D22DE3 /* Frameworks */ = {
+		0F65647019D8C40300794B3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F65647019D8C40300794B3A /* Frameworks */ = {
+		0FA7AFB41A09914600526C84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA7AFB61A09916600526C84 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 		0F65645519D8C40100794B3A = {
 			isa = PBXGroup;
 			children = (
+				0FA7AFB51A09916500526C84 /* Photos.framework */,
 				0F65646019D8C40200794B3A /* HolaMundo */,
 				0F65647619D8C40300794B3A /* HolaMundoTests */,
 				0F65645F19D8C40200794B3A /* Products */,
@@ -97,6 +103,7 @@
 				0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */,
 				0F4E23F81A0881B800CED293 /* RecoverPassword.swift */,
 				0F4C06311A093808009B27EE /* ViewGallery.swift */,
+				0FA7AFB71A09A50400526C84 /* PhotoThumbnail.swift */,
 				0F4C062F1A093557009B27EE /* ViewPhoto.swift */,
 				0F65646A19D8C40200794B3A /* Images.xcassets */,
 				0F65646C19D8C40200794B3A /* LaunchScreen.xib */,
@@ -140,7 +147,7 @@
 				0F65645A19D8C40200794B3A /* Sources */,
 				0F65645C19D8C40200794B3A /* Resources */,
 				50524F424C454D533F /* ShellScript */,
-				0F0497D71A0940E900D22DE3 /* Frameworks */,
+				0FA7AFB41A09914600526C84 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +261,7 @@
 				0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */,
 				0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */,
 				0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */,
+				0FA7AFB81A09A50400526C84 /* PhotoThumbnail.swift in Sources */,
 				0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HolaMundo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = PerfectPhoto;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -392,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HolaMundo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = PerfectPhoto;
 				TARGETED_DEVICE_FAMILY = 1;
