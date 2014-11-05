@@ -412,6 +412,7 @@
                         <outlet property="messageLabel2" destination="xza-Sw-vKW" id="gGP-8Q-u2b"/>
                         <outlet property="passwordTextField" destination="GIU-Aw-DXK" id="lLO-zA-6wt"/>
                         <outlet property="usernameTextField" destination="eW8-Ka-w0i" id="b7O-bK-c1r"/>
+                        <segue destination="sOt-Ax-JYB" kind="show" identifier="successLogin" id="kwB-hg-8zg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooT-Ak-E21" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -510,7 +511,27 @@
             </objects>
             <point key="canvasLocation" x="564" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Perfil-->
+        <scene sceneID="oge-a7-91U">
+            <objects>
+                <viewController id="H1x-Sp-Ay4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7d2-fj-8Fb"/>
+                        <viewControllerLayoutGuide type="bottom" id="YsF-oG-18r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w50-Cp-ago">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="6Wx-Gd-i9y"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIn-gC-ck4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3492" y="-527"/>
+        </scene>
+        <!--Lecciones-->
         <scene sceneID="mPh-U3-h7c">
             <objects>
                 <viewController id="fp4-7A-O67" sceneMemberID="viewController">
@@ -523,8 +544,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TFo-TZ-Lfk">
-                        <barButtonItem key="backBarButtonItem" title="Volver" id="Vl3-vN-ZwG"/>
+                    <navigationItem key="navigationItem" title="Lecciones" id="TFo-TZ-Lfk">
+                        <barButtonItem key="backBarButtonItem" title="Lecciones" id="Vl3-vN-ZwG"/>
+                        <barButtonItem key="leftBarButtonItem" title="Perfil" id="ID1-S0-MHR">
+                            <connections>
+                                <segue destination="3rK-iR-1kP" kind="show" id="82C-uH-Igq"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Galería" id="v3g-7V-QXQ">
                             <connections>
                                 <segue destination="7Hf-2N-zP4" kind="show" id="5Yl-Kh-uaD"/>
@@ -581,8 +607,28 @@
             </objects>
             <point key="canvasLocation" x="2253" y="137"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mp4-vW-GOR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3rK-iR-1kP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAn-nJ-eWb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H1x-Sp-Ay4" kind="relationship" relationship="rootViewController" id="Ifg-tT-Kk1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j26-uk-QZf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3095" y="-527"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XE3-hG-icL"/>
+        <segue reference="Z37-qk-NBi"/>
+        <segue reference="kwB-hg-8zg"/>
     </inferredMetricsTieBreakers>
 </document>

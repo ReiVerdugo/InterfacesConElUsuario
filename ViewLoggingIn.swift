@@ -28,6 +28,10 @@ class ViewLoggingIn: UIViewController {
     }
     
     @IBAction func acceptButton(sender: AnyObject) {
+        
+        messageLabel.text = ""
+        messageLabel2.text = ""
+        
         if usernameTextField.text == ""
         {
             messageLabel.text = "Debe introducir un nombre de usuario"
@@ -35,6 +39,11 @@ class ViewLoggingIn: UIViewController {
         if passwordTextField.text == ""
         {
             messageLabel2.text = "Debe introducir una contraseña"
+        }
+        if (passwordTextField.text != "") && (usernameTextField.text != "")
+        {
+            performSegueWithIdentifier("successLogin", sender: self)
+            
         }
     }
     
