@@ -9,3 +9,6 @@ Perfom seguers (cambiar a otra vista de navegación de manera condicional): http
 
 Código con la implementación de una galería de fotos:
 https://github.com/TDAbboud/PhotosGalleryApp/blob/master/Photos%20Gallery%20App/ViewPhoto.swift
+
+Crear Login usando Facebook:
+http://www.veasoftware.com/tutorials/2014/8/22/xcode-6-tutorial-ios-8-0-facebook-login-in-swift
