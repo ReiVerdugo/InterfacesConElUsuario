@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewLoggingIn: UIViewController {
+class ViewLoggingIn: UIViewController, FBLoginViewDelegate {
 
+    @IBOutlet var fbLoginView : FBLoginView!
     
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -47,9 +48,31 @@ class ViewLoggingIn: UIViewController {
         }
     }
     
+    // Métodos del Facebook Delegate
+    
+    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
+        println("User Logged In")
+        performSegueWithIdentifier("successLogin", sender: self)
+    }
+    
+    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
+        println("User Name: \(user.name)")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
+        println("User Logged Out")
+    }
+    
+    func loginView(loginView : FBLoginView!, handleError:NSError) {
+        println("Error: \(handleError.localizedDescription)")
+    }
+    
+    
+    // Override functions
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
         // Do any additional setup after loading the view.
     }
 
