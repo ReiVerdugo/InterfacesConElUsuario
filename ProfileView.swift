@@ -11,10 +11,17 @@ import UIKit
 class ProfileView: UIViewController, FBLoginViewDelegate{
     
     @IBOutlet var fbLoginView : FBLoginView!
+    
+    @IBOutlet var logoutButton: UIButton!
 
+    @IBOutlet var profilePic: UIImageView!
+    
+    @IBOutlet var userName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
         // Do any additional setup after loading the view.
     }
     
@@ -25,9 +32,11 @@ class ProfileView: UIViewController, FBLoginViewDelegate{
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
         println("User Logged In")
+        logoutButton.hidden = true
     }
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
+        userName.text = "\(user.name)"
         println("User Name: \(user.name)")
     }
     
