@@ -11,6 +11,7 @@
 		0F27C6561A07DB38004A2355 /* ViewRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F27C6551A07DB38004A2355 /* ViewRegister.swift */; };
 		0F3489C71A0B9FEA001F40AF /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3489C61A0B9FEA001F40AF /* Photos.framework */; };
 		0F3489C91A0BA029001F40AF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3489C81A0BA029001F40AF /* FacebookSDK.framework */; };
+		0F3489CE1A0BB5A2001F40AF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */; };
 		0F43D47C1A0A46A900CDC25B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D47B1A0A46A900CDC25B /* SettingsView.swift */; };
 		0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C062F1A093557009B27EE /* ViewPhoto.swift */; };
 		0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C06311A093808009B27EE /* ViewGallery.swift */; };
@@ -41,6 +42,7 @@
 		0F3489C61A0B9FEA001F40AF /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		0F3489C81A0BA029001F40AF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		0F3489CA1A0BA311001F40AF /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridge-Header.h"; path = "../Bridge-Header.h"; sourceTree = "<group>"; };
+		0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../ProfileView.swift; sourceTree = "<group>"; };
 		0F43D47B1A0A46A900CDC25B /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = ../SettingsView.swift; sourceTree = "<group>"; };
 		0F4C062F1A093557009B27EE /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPhoto.swift; path = ../ViewPhoto.swift; sourceTree = "<group>"; };
 		0F4C06311A093808009B27EE /* ViewGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewGallery.swift; path = ../ViewGallery.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */,
 				0F4E23F81A0881B800CED293 /* RecoverPassword.swift */,
 				0F4C06311A093808009B27EE /* ViewGallery.swift */,
+				0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */,
 				0FA7AFB71A09A50400526C84 /* PhotoThumbnail.swift */,
 				0F4C062F1A093557009B27EE /* ViewPhoto.swift */,
 				0F43D47B1A0A46A900CDC25B /* SettingsView.swift */,
@@ -272,6 +275,7 @@
 				0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */,
 				0FA7AFB81A09A50400526C84 /* PhotoThumbnail.swift in Sources */,
 				0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */,
+				0F3489CE1A0BB5A2001F40AF /* ProfileView.swift in Sources */,
 				0F43D47C1A0A46A900CDC25B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

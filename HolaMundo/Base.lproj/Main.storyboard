@@ -551,7 +551,7 @@
         <!--Perfil-->
         <scene sceneID="OCR-pG-bKz">
             <objects>
-                <viewController id="THH-xy-Ijf" sceneMemberID="viewController">
+                <viewController id="THH-xy-Ijf" customClass="ProfileView" customModule="PerfectPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eGW-dQ-GHv"/>
                         <viewControllerLayoutGuide type="bottom" id="o3K-Wb-fVy"/>
@@ -614,9 +614,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="cg2-Kp-aDX"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" identifier="gotoMain" id="cg2-Kp-aDX"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGA-ug-chI" customClass="FBLoginView">
+                                <rect key="frame" x="60" y="468" width="200" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -624,6 +628,9 @@
                         <barButtonItem key="backBarButtonItem" title="Perfil" id="iaN-LW-jSD"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="fbLoginView" destination="JGA-ug-chI" id="4ZK-2w-mgL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIT-23-0eB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
