@@ -690,10 +690,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="SRM-9c-FlC">
-                                <rect key="frame" x="73" y="72" width="171" height="158"/>
+                                <rect key="frame" x="73" y="87" width="171" height="158"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seguidores: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2f-Mx-B4S">
-                                <rect key="frame" x="106" y="285" width="120" height="21"/>
+                                <rect key="frame" x="106" y="300" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -744,13 +744,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fotógrafo Amateur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pa2-mI-WPS">
-                                <rect key="frame" x="81" y="262" width="158" height="21"/>
+                                <rect key="frame" x="81" y="277" width="158" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzY-Ka-35X">
-                                <rect key="frame" x="16" y="238" width="288" height="21"/>
+                                <rect key="frame" x="16" y="253" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -762,6 +762,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZ9-Kb-Ekp" customClass="FBLoginView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfz-SI-2tl" customClass="FBProfilePictureView">
+                                <rect key="frame" x="57" y="50" width="202" height="195"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6g-aX-JBy" customClass="FBLoginView">
                                 <rect key="frame" x="60" y="490" width="200" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -773,9 +780,10 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="fbLoginView" destination="Hq8-Pu-i2y" id="ueu-sw-niR"/>
+                        <outlet property="fbLoginView" destination="I6g-aX-JBy" id="GDR-Vq-dOw"/>
                         <outlet property="logoutButton" destination="6Zg-we-1v3" id="aXZ-ef-bM1"/>
                         <outlet property="profilePic" destination="SRM-9c-FlC" id="OTg-U3-XlY"/>
+                        <outlet property="profilePictureView" destination="zfz-SI-2tl" id="ArW-Id-TR7"/>
                         <outlet property="userName" destination="hzY-Ka-35X" id="S01-ac-eBV"/>
                     </connections>
                 </viewController>

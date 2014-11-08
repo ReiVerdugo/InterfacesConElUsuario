@@ -12,6 +12,8 @@ class ProfileView: UIViewController, FBLoginViewDelegate{
     
     @IBOutlet var fbLoginView : FBLoginView!
     
+    @IBOutlet var profilePictureView : FBProfilePictureView!
+    
     @IBOutlet var logoutButton: UIButton!
 
     @IBOutlet var profilePic: UIImageView!
@@ -37,6 +39,7 @@ class ProfileView: UIViewController, FBLoginViewDelegate{
     
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
         userName.text = "\(user.name)"
+        profilePictureView.profileID = user.objectID
         println("User Name: \(user.name)")
     }
     
