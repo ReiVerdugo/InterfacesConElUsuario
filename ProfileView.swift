@@ -22,6 +22,7 @@ class ProfileView: UIViewController, FBLoginViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.hidesBarsOnTap = true
         self.fbLoginView.delegate = self
         self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
         // Do any additional setup after loading the view.
