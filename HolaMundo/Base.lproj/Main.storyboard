@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G5d-xk-mfc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -612,7 +613,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unfollow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIL-aV-bQ6">
-                                <rect key="frame" x="119" y="359" width="83" height="21"/>
+                                <rect key="frame" x="119" y="358" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -969,11 +970,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfz-SI-2tl" customClass="FBProfilePictureView">
-                                <rect key="frame" x="65" y="45" width="191" height="191"/>
+                                <rect key="frame" x="65" y="33" width="191" height="191"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="100"/>
+                                        <integer key="value" value="95"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -1065,7 +1066,7 @@
         <!--Lecciones-->
         <scene sceneID="mPh-U3-h7c">
             <objects>
-                <viewController id="fp4-7A-O67" sceneMemberID="viewController">
+                <viewController id="fp4-7A-O67" customClass="LessonsView" customModule="PerfectPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K3X-xI-OeC"/>
                         <viewControllerLayoutGuide type="bottom" id="OEo-rW-CnL"/>
@@ -1073,7 +1074,70 @@
                     <view key="view" contentMode="scaleToFill" id="pxe-bG-rq7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lhB-Gx-GUX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZC-Mt-5Hh">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="823"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introducción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-Qf-1Lv">
+                                                <rect key="frame" x="96" y="18" width="128" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLI-Er-lE8">
+                                                <rect key="frame" x="96" y="209" width="128" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWI-jF-pfM">
+                                                <rect key="frame" x="96" y="376" width="128" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BYS-v1-lHW"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partes de una cámara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqv-Ei-qXk">
+                                                <rect key="frame" x="70" y="161" width="181" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bs-LO-g34">
+                                                <rect key="frame" x="104" y="50" width="100" height="100"/>
+                                                <state key="normal" image="lesson0CameraParts">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="introLessonPressed:" destination="fp4-7A-O67" eventType="touchUpInside" id="kvg-qA-CRO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="823" id="59B-Fw-psw"/>
+                                            <constraint firstAttribute="width" constant="320" id="aFy-sT-fsH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AZC-Mt-5Hh" secondAttribute="bottom" constant="-255" id="6GE-4x-deE"/>
+                                    <constraint firstItem="AZC-Mt-5Hh" firstAttribute="top" secondItem="lhB-Gx-GUX" secondAttribute="top" id="Nuc-Z8-tPU"/>
+                                    <constraint firstAttribute="trailing" secondItem="AZC-Mt-5Hh" secondAttribute="trailing" id="XtK-bH-sNC"/>
+                                    <constraint firstItem="AZC-Mt-5Hh" firstAttribute="leading" secondItem="lhB-Gx-GUX" secondAttribute="leading" id="uAp-kz-gh7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lhB-Gx-GUX" firstAttribute="leading" secondItem="pxe-bG-rq7" secondAttribute="leadingMargin" constant="-16" id="6hP-zs-Zd1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lhB-Gx-GUX" secondAttribute="trailing" constant="-16" id="ERP-re-CjU"/>
+                            <constraint firstItem="OEo-rW-CnL" firstAttribute="top" secondItem="lhB-Gx-GUX" secondAttribute="bottom" id="Ks1-S2-aSF"/>
+                            <constraint firstItem="lhB-Gx-GUX" firstAttribute="top" secondItem="pxe-bG-rq7" secondAttribute="topMargin" id="hlB-fo-trb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lecciones" id="TFo-TZ-Lfk">
                         <barButtonItem key="backBarButtonItem" title="Lecciones" id="Vl3-vN-ZwG"/>
@@ -1089,10 +1153,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="HBE-8x-CMK" kind="presentation" identifier="gotoLesson0" modalTransitionStyle="crossDissolve" id="KfJ-tL-n7C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="81j-ZA-paV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2660" y="137"/>
+            <point key="canvasLocation" x="2662" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="srw-a0-4Tt">
@@ -1116,6 +1183,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abL-xp-Kik" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3064" y="137"/>
+        </scene>
+        <!--Camera Parts View-->
+        <scene sceneID="X9F-Sr-FVu">
+            <objects>
+                <viewController id="HBE-8x-CMK" customClass="CameraPartsView" customModule="PerfectPhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t9V-9d-ovJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BuV-e4-G7k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1eX-V4-Ism">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-m3-n5L">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.45098039220000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="lSZ-lC-QPN">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="9RB-a7-pCG">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="HBE-8x-CMK" id="Kw1-Ac-Xy7"/>
+                                                <segue destination="sOt-Ax-JYB" kind="presentation" modalTransitionStyle="crossDissolve" id="l3x-jt-hG5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lesson0CameraParts" translatesAutoresizingMaskIntoConstraints="NO" id="v63-wN-wb1">
+                                <rect key="frame" x="65" y="119" width="190" height="190"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Partes de la Cámara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyf-1D-XyL">
+                                <rect key="frame" x="65" y="90" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Conoce alguno de los componentes de tu cámara DSLR." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tvj-0X-P1F">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-h9-bUE">
+                                <rect key="frame" x="63" y="464" width="194" height="73"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="¡Empezar!" backgroundImage="whiteButtonBorder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Conoce alguno de los componentes de tu cámara DSLR." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wLa-yX-uqB">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Conoce alguno de los componentes de tu cámara DSLR." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rfm-Ot-Qan">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conoce algunos de los" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-o5-wvL">
+                                <rect key="frame" x="16" y="336" width="288" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="elementos de tu cámara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycg-Fc-94f">
+                                <rect key="frame" x="16" y="362" width="288" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DSLR." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrD-99-49d">
+                                <rect key="frame" x="16" y="388" width="288" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.45098039215686275" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CaV-vQ-86E"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-dR-pcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3064" y="852"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FFk-SN-9Av">
@@ -1206,6 +1362,7 @@
         <image name="emailICon" width="256" height="256"/>
         <image name="friends" width="224" height="43"/>
         <image name="iamemhn" width="199" height="199"/>
+        <image name="lesson0CameraParts" width="300" height="300"/>
         <image name="passwordIcon" width="512" height="512"/>
         <image name="profilePic" width="500" height="500"/>
         <image name="rmonascal" width="238" height="238"/>
@@ -1215,8 +1372,8 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kwB-hg-8zg"/>
         <segue reference="cg2-Kp-aDX"/>
+        <segue reference="l3x-jt-hG5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
