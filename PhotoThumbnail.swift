@@ -10,8 +10,6 @@ import UIKit
 
 class PhotoThumbnail: UICollectionViewCell {
     
-    
-    
     @IBOutlet weak var imgView: UIImageView!
     
     func setThumbnailImage(thumbnailImage: UIImage){
