@@ -17,8 +17,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDc-UC-YOL">
+                                <rect key="frame" x="25" y="55" width="270" height="284"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0ry-EF-Zik">
+                                        <rect key="frame" x="9" y="8" width="253" height="153"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PerfectPhoto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-OF-x0q">
+                                        <rect key="frame" x="71" y="175" width="128" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.95841233729999997" blue="0.98524824160000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡Toma las mejores fotos!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12V-b1-Eng">
+                                        <rect key="frame" x="42" y="219" width="186" height="21"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="7eo-r0-M35">
+                                        <rect key="frame" x="116" y="247" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="25l-Ir-TEP" appends="YES" id="dtp-rM-HFp"/>
+                                </connections>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZJ-hn-0Ik">
-                                <rect key="frame" x="58" y="467" width="215" height="75"/>
+                                <rect key="frame" x="53" y="473" width="215" height="75"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Ya tengo cuenta" backgroundImage="whiteButtonBorder">
                                     <color key="titleColor" red="0.99652323639999996" green="0.99101545540000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,23 +56,8 @@
                                     <segue destination="obX-kF-Xci" kind="presentation" identifier="gotoLogin" modalTransitionStyle="crossDissolve" id="9OK-Xo-vuo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PerfectPhoto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-OF-x0q">
-                                <rect key="frame" x="96" y="226" width="128" height="22"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.95841233729999997" blue="0.98524824160000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="0ry-EF-Zik">
-                                <rect key="frame" x="34" y="40" width="253" height="153"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡Toma las mejores fotos!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12V-b1-Eng">
-                                <rect key="frame" x="67" y="273" width="186" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDR-vM-bsy">
-                                <rect key="frame" x="58" y="398" width="215" height="75"/>
+                                <rect key="frame" x="53" y="404" width="215" height="75"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Registrarme" backgroundImage="whiteButtonBorder">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,8 +77,74 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="25l-Ir-TEP">
+                    <connections>
+                        <segue destination="qPB-aH-95d" kind="show" identifier="goto2" id="17d-Rt-ImM"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="952" y="137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A8y-Wm-TBE">
+            <objects>
+                <viewController id="qPB-aH-95d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aqw-GC-UtL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ElG-wN-CcQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sOP-70-B7M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3X-Uq-RCw">
+                                <rect key="frame" x="53" y="473" width="215" height="75"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Ya tengo cuenta" backgroundImage="whiteButtonBorder">
+                                    <color key="titleColor" red="0.99652323639999996" green="0.99101545540000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="obX-kF-Xci" kind="presentation" identifier="from2toLogin" modalTransitionStyle="crossDissolve" id="Ryc-y8-gvu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-kz-Un7">
+                                <rect key="frame" x="53" y="404" width="215" height="75"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Registrarme" backgroundImage="whiteButtonBorder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BV2-C0-V32" kind="presentation" identifier="from2toRegistration" modalTransitionStyle="flipHorizontal" id="Gup-J3-Nmf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3oQ-yA-ZPO">
+                                <rect key="frame" x="20" y="57" width="270" height="284"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-YO-dMN">
+                                        <rect key="frame" x="116" y="247" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="abs-bj-hRr" appends="YES" id="2UQ-cX-fiK"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ODj-hK-DYf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrd-0Z-0pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="abs-bj-hRr">
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="goto1" id="SaP-be-OQu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="952" y="-493"/>
         </scene>
         <!--View Register-->
         <scene sceneID="Uqi-Rm-Gfj">
@@ -1201,7 +1280,7 @@
                                 <color key="backgroundColor" red="0.1176470588" green="0.45098039220000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="lSZ-lC-QPN">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="9RB-a7-pCG">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="9RB-a7-pCG">
                                             <connections>
                                                 <action selector="cancelPressed:" destination="HBE-8x-CMK" id="Kw1-Ac-Xy7"/>
                                                 <segue destination="sOt-Ax-JYB" kind="presentation" modalTransitionStyle="crossDissolve" id="l3x-jt-hG5"/>
@@ -1231,6 +1310,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rm1-f3-39k" kind="presentation" modalTransitionStyle="flipHorizontal" id="fov-vu-MBb"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Conoce alguno de los componentes de tu cámara DSLR." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wLa-yX-uqB">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1243,21 +1325,21 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conoce algunos de los" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJb-o5-wvL">
-                                <rect key="frame" x="16" y="336" width="288" height="29"/>
+                                <rect key="frame" x="16" y="324" width="288" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="elementos de tu cámara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycg-Fc-94f">
-                                <rect key="frame" x="16" y="362" width="288" height="29"/>
+                                <rect key="frame" x="16" y="350" width="288" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DSLR." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrD-99-49d">
-                                <rect key="frame" x="16" y="388" width="288" height="29"/>
+                                <rect key="frame" x="16" y="376" width="288" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1272,6 +1354,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTb-dR-pcY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3064" y="852"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5U0-K6-ZFT">
+            <objects>
+                <viewController id="rm1-f3-39k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Dv-t6-7QQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jkc-3K-oot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ka6-Jl-f1N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraParts" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-Fy-MUD">
+                                <rect key="frame" x="0.0" y="-8" width="320" height="568"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KCX-N7-weO">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.45098039220000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem id="CpD-Yd-ial">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="CTW-xV-mM2">
+                                            <connections>
+                                                <action selector="cancelPressed:" destination="HBE-8x-CMK" id="Ms9-k7-nUW"/>
+                                                <segue destination="sOt-Ax-JYB" kind="presentation" modalTransitionStyle="crossDissolve" id="pzl-cx-quK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgj-TU-gfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3492" y="852"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FFk-SN-9Av">
@@ -1358,6 +1478,7 @@
         <image name="Image" width="180" height="180"/>
         <image name="achievements" width="224" height="43"/>
         <image name="blueButtonBorder" width="500" height="200"/>
+        <image name="cameraParts" width="640" height="1136"/>
         <image name="dontpanic" width="479" height="479"/>
         <image name="emailICon" width="256" height="256"/>
         <image name="friends" width="224" height="43"/>
@@ -1372,8 +1493,10 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cg2-Kp-aDX"/>
         <segue reference="l3x-jt-hG5"/>
+        <segue reference="Gup-J3-Nmf"/>
+        <segue reference="SaP-be-OQu"/>
+        <segue reference="Ryc-y8-gvu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
