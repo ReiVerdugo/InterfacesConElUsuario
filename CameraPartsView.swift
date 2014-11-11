@@ -10,11 +10,11 @@ import UIKit
 
 class CameraPartsView: UIViewController {
     
-    var anillo : Bool = false
-    var enganche : Bool = false
-    var zapata : Bool = false
-    var selector : Bool = false
-    var disparo : Bool = false
+    var anillo      : Bool = false
+    var enganche    : Bool = false
+    var zapata      : Bool = false
+    var selector    : Bool = false
+    var disparo     : Bool = false
     
     
     @IBAction func anilloEnfoque(sender: UIButton) {
@@ -99,6 +99,8 @@ class CameraPartsView: UIViewController {
         if !(anillo && enganche && zapata && selector && disparo)
         {
             self.presentViewController(alert, animated: true, completion: nil)
+        } else {
+            self.performSegueWithIdentifier("gotoTest", sender: self)
         }
         
     }
