@@ -35,6 +35,18 @@ class CameraPartsTestView: UIViewController {
     
     @IBOutlet weak var xCorrea: UIImageView!
     
+    @IBOutlet weak var checkmarkAnillo: UIImageView!
+    
+    @IBOutlet weak var checkmarkDisparador: UIImageView!
+    
+    @IBOutlet weak var checkmarkModo: UIImageView!
+    
+    @IBOutlet weak var checkmarkFlash: UIImageView!
+    
+    @IBOutlet weak var checkmarkCorrea: UIImageView!
+    
+    
+    
     func verificarVidas(vidas:Int) {
         if vidas == 0 {
             performSegueWithIdentifier("gotoFail", sender: self)
@@ -49,6 +61,7 @@ class CameraPartsTestView: UIViewController {
             xModo.hidden = true
             xFlash.hidden = true
             xCorrea.hidden = true
+            checkmarkAnillo.hidden = false
             parteCamara.text = "Disparador"
         }
         else {
@@ -66,6 +79,7 @@ class CameraPartsTestView: UIViewController {
             xModo.hidden = true
             xFlash.hidden = true
             xCorrea.hidden = true
+            checkmarkDisparador.hidden = false
             parteCamara.text = "Selector de Modo"
         }
         else {
@@ -83,6 +97,7 @@ class CameraPartsTestView: UIViewController {
             xModo.hidden = true
             xFlash.hidden = true
             xCorrea.hidden = true
+            checkmarkModo.hidden = false
             parteCamara.text = "Zapata para Flash"
         }
         else {
@@ -100,6 +115,7 @@ class CameraPartsTestView: UIViewController {
             xModo.hidden = true
             xFlash.hidden = true
             xCorrea.hidden = true
+            checkmarkFlash.hidden = false
             parteCamara.text = "Enganche para Correa"
         }
         else {
@@ -117,7 +133,9 @@ class CameraPartsTestView: UIViewController {
             xModo.hidden = true
             xFlash.hidden = true
             xCorrea.hidden = true
+            checkmarkCorrea.hidden = false
             parteCamara.text = ""
+            self.performSegueWithIdentifier("gotoSuccess", sender: self)
         }
         else {
             xCorrea.hidden = false
@@ -126,6 +144,26 @@ class CameraPartsTestView: UIViewController {
         }
     }
     
+    @IBAction func cancelPresionado(sender: UIButton) {
+        let alert = UIAlertController(title: "¿Estás seguro de que deseas salir?", message: "Perderás todo tu progreso.", preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "Sí", style: .Default, handler: {(alertAction)in
+            //Si decide salir de la lección
+            self.performSegueWithIdentifier("Main", sender: self)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: {(alertAction)in
+            //Si decide quedarse en la lección
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "gotoSuccess") {
+            let controller : ApprovedLessonView = segue.destinationViewController as ApprovedLessonView
+            controller.numVidas = self.numVidas
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,6 +18,7 @@
 		0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */; };
 		0F4E23F91A0881B800CED293 /* RecoverPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E23F81A0881B800CED293 /* RecoverPassword.swift */; };
 		0F59CBAE1A11966900126134 /* CameraPartsTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59CBAD1A11966900126134 /* CameraPartsTestView.swift */; };
+		0F59CBB01A11A8AE00126134 /* ApprovedLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F59CBAF1A11A8AE00126134 /* ApprovedLessonView.swift */; };
 		0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65646319D8C40200794B3A /* AppDelegate.swift */; };
 		0F65646619D8C40200794B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65646519D8C40200794B3A /* ViewController.swift */; };
 		0F65646919D8C40200794B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646719D8C40200794B3A /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccesfullRegister.swift; path = ../SuccesfullRegister.swift; sourceTree = "<group>"; };
 		0F4E23F81A0881B800CED293 /* RecoverPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecoverPassword.swift; path = ../RecoverPassword.swift; sourceTree = "<group>"; };
 		0F59CBAD1A11966900126134 /* CameraPartsTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraPartsTestView.swift; path = ../CameraPartsTestView.swift; sourceTree = "<group>"; };
+		0F59CBAF1A11A8AE00126134 /* ApprovedLessonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApprovedLessonView.swift; path = ../ApprovedLessonView.swift; sourceTree = "<group>"; };
 		0F65645E19D8C40200794B3A /* PerfectPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F65646219D8C40200794B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F65646319D8C40200794B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				0F8D34C31A102347005678A3 /* LessonsView.swift */,
 				0F8D34C51A10264B005678A3 /* CameraPartsView.swift */,
 				0F59CBAD1A11966900126134 /* CameraPartsTestView.swift */,
+				0F59CBAF1A11A8AE00126134 /* ApprovedLessonView.swift */,
 				0F65646A19D8C40200794B3A /* Images.xcassets */,
 				0F65646C19D8C40200794B3A /* LaunchScreen.xib */,
 				0F65646119D8C40200794B3A /* Supporting Files */,
@@ -287,6 +290,7 @@
 				0F8D34C41A102347005678A3 /* LessonsView.swift in Sources */,
 				0F27C6561A07DB38004A2355 /* ViewRegister.swift in Sources */,
 				0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */,
+				0F59CBB01A11A8AE00126134 /* ApprovedLessonView.swift in Sources */,
 				0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */,
 				0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */,
 				0FE048791A0EF40000FDF354 /* FriendsView.swift in Sources */,

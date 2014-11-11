@@ -32,7 +32,7 @@ class CameraPartsView: UIViewController {
     @IBAction func engancheCorrea(sender: UIButton) {
         let alert = UIAlertController(title: "Enganche para Correa", message: "Permite que enganchemos una correa a la cámara.", preferredStyle: .Alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: {(alertAction)in
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
@@ -43,7 +43,7 @@ class CameraPartsView: UIViewController {
     @IBAction func zapataFlash(sender: UIButton) {
         let alert = UIAlertController(title: "Zapata para Flash", message: "Estructura que permite conectar físicamente una unidad externa de flash.", preferredStyle: .Alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: {(alertAction)in
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
@@ -54,7 +54,7 @@ class CameraPartsView: UIViewController {
     @IBAction func selectorModo(sender: UIButton) {
         let alert = UIAlertController(title: "Selector de Modo", message: "Ruleta en la que se selecciona el modo de operación de la cámara.", preferredStyle: .Alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: {(alertAction)in
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
@@ -65,7 +65,7 @@ class CameraPartsView: UIViewController {
     @IBAction func disparador(sender: UIButton) {
         let alert = UIAlertController(title: "Disparador", message: "Al ejecutor este botón se obtiene la imagen capturada.", preferredStyle: .Alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: {(alertAction)in
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
