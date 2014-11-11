@@ -20,7 +20,7 @@ class CameraPartsView: UIViewController {
     @IBAction func anilloEnfoque(sender: UIButton) {
         let alert = UIAlertController(title: "Anillo de enfoque", message: "Permite regular la distancia al objetivo, para conseguir una imagen nítida o enfocada.", preferredStyle: .Alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .Cancel, handler: {(alertAction)in
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //
             alert.dismissViewControllerAnimated(true, completion: nil)
             }))

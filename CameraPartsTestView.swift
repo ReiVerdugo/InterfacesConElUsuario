@@ -14,6 +14,15 @@ class CameraPartsTestView: UIViewController {
     
     @IBOutlet weak var parteCamara: UILabel!
     
+    // Vidas Descontadas
+    
+    @IBOutlet weak var vida3: UIImageView!
+    
+    @IBOutlet weak var vida2: UIImageView!
+    
+    @IBOutlet weak var vida1: UIImageView!
+    
+    // Circulos para esconder o mostrar
     
     @IBOutlet weak var circuloAnillo: UIButton!
     
@@ -25,6 +34,8 @@ class CameraPartsTestView: UIViewController {
     
     @IBOutlet weak var circuloCorrea: UIButton!
     
+    // Marcas incorrectas para esconder o mostrar
+    
     @IBOutlet weak var xAnillo: UIImageView!
     
     @IBOutlet weak var xDisparador: UIImageView!
@@ -34,6 +45,8 @@ class CameraPartsTestView: UIViewController {
     @IBOutlet weak var xFlash: UIImageView!
     
     @IBOutlet weak var xCorrea: UIImageView!
+    
+    // Checkmarks para esconder o mostrar
     
     @IBOutlet weak var checkmarkAnillo: UIImageView!
     
@@ -48,7 +61,14 @@ class CameraPartsTestView: UIViewController {
     
     
     func verificarVidas(vidas:Int) {
+        if vidas == 2 {
+            vida3.hidden = false
+        }
+        if vidas == 1 {
+            vida2.hidden = false
+        }
         if vidas == 0 {
+            vida1.hidden = false
             performSegueWithIdentifier("gotoFail", sender: self)
         }
     }
