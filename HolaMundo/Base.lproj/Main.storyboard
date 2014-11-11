@@ -1355,10 +1355,10 @@
             </objects>
             <point key="canvasLocation" x="3064" y="852"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera Parts View-->
         <scene sceneID="5U0-K6-ZFT">
             <objects>
-                <viewController id="rm1-f3-39k" sceneMemberID="viewController">
+                <viewController id="rm1-f3-39k" customClass="CameraPartsView" customModule="PerfectPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Dv-t6-7QQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Jkc-3K-oot"/>
@@ -1367,27 +1367,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Toca algún componente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-bW-fYv">
+                                <rect key="frame" x="60" y="33" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7I-tO-piX">
+                                <rect key="frame" x="63" y="483" width="194" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="¡Estoy listo!" backgroundImage="blueButtonBorder">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readyButtonPressed:" destination="rm1-f3-39k" eventType="touchUpInside" id="h5K-um-eBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-Z7-8eI">
+                                <rect key="frame" x="242" y="270" width="46" height="45"/>
+                                <state key="normal" backgroundImage="redcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disparador:" destination="rm1-f3-39k" eventType="touchUpInside" id="dzv-vS-jDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grl-KK-CoW">
+                                <rect key="frame" x="16" y="345" width="46" height="45"/>
+                                <state key="normal" backgroundImage="redcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="engancheCorrea:" destination="rm1-f3-39k" eventType="touchUpInside" id="aNc-cM-cL5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONN-UT-Wmb">
+                                <rect key="frame" x="92" y="125" width="67" height="64"/>
+                                <state key="normal" backgroundImage="redcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="anilloEnfoque:" destination="rm1-f3-39k" eventType="touchUpInside" id="VIv-Z6-1on"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsy-0f-Rrd">
+                                <rect key="frame" x="86" y="349" width="83" height="81"/>
+                                <state key="normal" backgroundImage="redcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="zapataFlash:" destination="rm1-f3-39k" eventType="touchUpInside" id="VUD-PY-Rqd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxA-Cm-1gS">
+                                <rect key="frame" x="190" y="329" width="79" height="78"/>
+                                <state key="normal" backgroundImage="redcircle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectorModo:" destination="rm1-f3-39k" eventType="touchUpInside" id="enV-FO-zAp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kah-GN-vIf">
+                                <rect key="frame" x="0.0" y="7" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="ZapfDingbatsITC" family="Zapf Dingbats" pointSize="27"/>
+                                <state key="normal" title="X">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelPressed:" destination="rm1-f3-39k" eventType="touchUpInside" id="icu-GQ-21B"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraParts" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-Fy-MUD">
                                 <rect key="frame" x="0.0" y="-8" width="320" height="568"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KCX-N7-weO">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.45098039220000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem id="CpD-Yd-ial">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="CTW-xV-mM2">
-                                            <connections>
-                                                <action selector="cancelPressed:" destination="HBE-8x-CMK" id="Ms9-k7-nUW"/>
-                                                <segue destination="sOt-Ax-JYB" kind="presentation" modalTransitionStyle="crossDissolve" id="pzl-cx-quK"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="sOt-Ax-JYB" kind="presentation" identifier="gotoMain" modalTransitionStyle="crossDissolve" id="p7G-cY-A5Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lgj-TU-gfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1486,6 +1546,7 @@
         <image name="lesson0CameraParts" width="300" height="300"/>
         <image name="passwordIcon" width="512" height="512"/>
         <image name="profilePic" width="500" height="500"/>
+        <image name="redcircle" width="300" height="300"/>
         <image name="rmonascal" width="238" height="238"/>
         <image name="settings" width="224" height="43"/>
         <image name="usernameIcon" width="128" height="128"/>
@@ -1493,10 +1554,10 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="l3x-jt-hG5"/>
-        <segue reference="Gup-J3-Nmf"/>
+        <segue reference="p7G-cY-A5Z"/>
         <segue reference="SaP-be-OQu"/>
-        <segue reference="Ryc-y8-gvu"/>
+        <segue reference="HwC-7t-Ltz"/>
+        <segue reference="9OK-Xo-vuo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
