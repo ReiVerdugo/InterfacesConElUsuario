@@ -14,6 +14,13 @@ class ApprovedLessonView: UIViewController {
 
     @IBOutlet weak var numVidasLabel: UILabel!
     
+    @IBAction func shareButton(sender: UIButton) {
+        var myShareRessult : String = "¡Aprobé la Lección \"Partes de la cámara\" en PerfectPhoto con \(self.numVidas) restantes!"
+        
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: [myShareRessult], applicationActivities: nil)
+        self.presentViewController(activityVC, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         numVidasLabel.text = "\(numVidas)"

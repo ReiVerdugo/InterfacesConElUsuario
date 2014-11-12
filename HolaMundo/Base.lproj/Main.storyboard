@@ -1838,6 +1838,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareButton:" destination="pd0-04-DUl" eventType="touchUpInside" id="fmE-mf-j3I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2019,7 +2022,7 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fNF-uc-Ohy"/>
+        <segue reference="fv5-I8-HOK"/>
         <segue reference="fAg-IZ-gy3"/>
         <segue reference="cg2-Kp-aDX"/>
         <segue reference="9OK-Xo-vuo"/>
