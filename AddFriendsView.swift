@@ -21,8 +21,12 @@ class AddFriendsView: UITableViewController, UISearchBarDelegate, UISearchDispla
             Friend(name: "yueofdark"),
             Friend(name: "whosthemark"),
             Friend(name: "glimonta"),
+            Friend(name: "jaescalante02"),
+            Friend(name: "esteoliver"),
             Friend(name: "pexison"),
-            Friend(name: "jljb1990")]
+            Friend(name: "giapetto"),
+            Friend(name: "jljb1990")
+        ]
         self.tableView.reloadData()
     }
     
