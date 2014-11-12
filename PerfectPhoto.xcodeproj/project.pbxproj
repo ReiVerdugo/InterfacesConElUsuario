@@ -25,6 +25,9 @@
 		0F65646B19D8C40200794B3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646A19D8C40200794B3A /* Images.xcassets */; };
 		0F65646E19D8C40200794B3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F65646C19D8C40200794B3A /* LaunchScreen.xib */; };
 		0F65647A19D8C40300794B3A /* HolaMundoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F65647919D8C40300794B3A /* HolaMundoTests.swift */; };
+		0F7A37B91A12E29100BE2A06 /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A37B81A12E29100BE2A06 /* AddFriendsView.swift */; };
+		0F7A37BF1A12EF7F00BE2A06 /* SayonaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A37BE1A12EF7F00BE2A06 /* SayonaView.swift */; };
+		0F7A37C11A12F49A00BE2A06 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7A37C01A12F49A00BE2A06 /* Friend.swift */; };
 		0F8D34C21A100FC9005678A3 /* NovichView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D34C11A100FC9005678A3 /* NovichView.swift */; };
 		0F8D34C41A102347005678A3 /* LessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D34C31A102347005678A3 /* LessonsView.swift */; };
 		0F8D34C61A10264B005678A3 /* CameraPartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8D34C51A10264B005678A3 /* CameraPartsView.swift */; };
@@ -66,6 +69,9 @@
 		0F65647319D8C40300794B3A /* HolaMundoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolaMundoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F65647819D8C40300794B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F65647919D8C40300794B3A /* HolaMundoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolaMundoTests.swift; sourceTree = "<group>"; };
+		0F7A37B81A12E29100BE2A06 /* AddFriendsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddFriendsView.swift; path = ../AddFriendsView.swift; sourceTree = "<group>"; };
+		0F7A37BE1A12EF7F00BE2A06 /* SayonaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SayonaView.swift; path = ../SayonaView.swift; sourceTree = "<group>"; };
+		0F7A37C01A12F49A00BE2A06 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Friend.swift; path = ../Friend.swift; sourceTree = "<group>"; };
 		0F8D34C11A100FC9005678A3 /* NovichView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NovichView.swift; path = ../NovichView.swift; sourceTree = "<group>"; };
 		0F8D34C31A102347005678A3 /* LessonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LessonsView.swift; path = ../LessonsView.swift; sourceTree = "<group>"; };
 		0F8D34C51A10264B005678A3 /* CameraPartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraPartsView.swift; path = ../CameraPartsView.swift; sourceTree = "<group>"; };
@@ -127,7 +133,10 @@
 				0F4C06311A093808009B27EE /* ViewGallery.swift */,
 				0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */,
 				0FE048781A0EF40000FDF354 /* FriendsView.swift */,
+				0F7A37B81A12E29100BE2A06 /* AddFriendsView.swift */,
+				0F7A37C01A12F49A00BE2A06 /* Friend.swift */,
 				0F8D34C11A100FC9005678A3 /* NovichView.swift */,
+				0F7A37BE1A12EF7F00BE2A06 /* SayonaView.swift */,
 				0FA7AFB71A09A50400526C84 /* PhotoThumbnail.swift */,
 				0F4C062F1A093557009B27EE /* ViewPhoto.swift */,
 				0F43D47B1A0A46A900CDC25B /* SettingsView.swift */,
@@ -292,10 +301,13 @@
 				0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */,
 				0F59CBB01A11A8AE00126134 /* ApprovedLessonView.swift in Sources */,
 				0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */,
+				0F7A37BF1A12EF7F00BE2A06 /* SayonaView.swift in Sources */,
 				0F65646419D8C40200794B3A /* AppDelegate.swift in Sources */,
 				0FE048791A0EF40000FDF354 /* FriendsView.swift in Sources */,
+				0F7A37B91A12E29100BE2A06 /* AddFriendsView.swift in Sources */,
 				0F8D34C21A100FC9005678A3 /* NovichView.swift in Sources */,
 				0F8D34C61A10264B005678A3 /* CameraPartsView.swift in Sources */,
+				0F7A37C11A12F49A00BE2A06 /* Friend.swift in Sources */,
 				0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */,
 				0FA7AFB81A09A50400526C84 /* PhotoThumbnail.swift in Sources */,
 				0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */,
