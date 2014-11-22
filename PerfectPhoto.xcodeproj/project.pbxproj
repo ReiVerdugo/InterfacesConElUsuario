@@ -13,6 +13,8 @@
 		0F3489C91A0BA029001F40AF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3489C81A0BA029001F40AF /* FacebookSDK.framework */; };
 		0F3489CE1A0BB5A2001F40AF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */; };
 		0F43D47C1A0A46A900CDC25B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F43D47B1A0A46A900CDC25B /* SettingsView.swift */; };
+		0F45DA591A2112C000C56F1B /* ExpositionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F45DA581A2112C000C56F1B /* ExpositionView.swift */; };
+		0F45DA5B1A2124C600C56F1B /* TestPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F45DA5A1A2124C600C56F1B /* TestPhotoView.swift */; };
 		0F4C06301A093557009B27EE /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C062F1A093557009B27EE /* ViewPhoto.swift */; };
 		0F4C06321A093808009B27EE /* ViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C06311A093808009B27EE /* ViewGallery.swift */; };
 		0F4E23F71A0866D100CED293 /* SuccesfullRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */; };
@@ -53,6 +55,8 @@
 		0F3489CA1A0BA311001F40AF /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridge-Header.h"; path = "../Bridge-Header.h"; sourceTree = "<group>"; };
 		0F3489CD1A0BB5A2001F40AF /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = ../ProfileView.swift; sourceTree = "<group>"; };
 		0F43D47B1A0A46A900CDC25B /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = ../SettingsView.swift; sourceTree = "<group>"; };
+		0F45DA581A2112C000C56F1B /* ExpositionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExpositionView.swift; path = ../ExpositionView.swift; sourceTree = "<group>"; };
+		0F45DA5A1A2124C600C56F1B /* TestPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestPhotoView.swift; path = ../TestPhotoView.swift; sourceTree = "<group>"; };
 		0F4C062F1A093557009B27EE /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPhoto.swift; path = ../ViewPhoto.swift; sourceTree = "<group>"; };
 		0F4C06311A093808009B27EE /* ViewGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewGallery.swift; path = ../ViewGallery.swift; sourceTree = "<group>"; };
 		0F4E23F61A0866D100CED293 /* SuccesfullRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuccesfullRegister.swift; path = ../SuccesfullRegister.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				0F8D34C51A10264B005678A3 /* CameraPartsView.swift */,
 				0F59CBAD1A11966900126134 /* CameraPartsTestView.swift */,
 				0F59CBAF1A11A8AE00126134 /* ApprovedLessonView.swift */,
+				0F45DA581A2112C000C56F1B /* ExpositionView.swift */,
+				0F45DA5A1A2124C600C56F1B /* TestPhotoView.swift */,
 				0F65646A19D8C40200794B3A /* Images.xcassets */,
 				0F65646C19D8C40200794B3A /* LaunchScreen.xib */,
 				0F65646119D8C40200794B3A /* Supporting Files */,
@@ -307,6 +313,8 @@
 				0F7A37B91A12E29100BE2A06 /* AddFriendsView.swift in Sources */,
 				0F8D34C21A100FC9005678A3 /* NovichView.swift in Sources */,
 				0F8D34C61A10264B005678A3 /* CameraPartsView.swift in Sources */,
+				0F45DA591A2112C000C56F1B /* ExpositionView.swift in Sources */,
+				0F45DA5B1A2124C600C56F1B /* TestPhotoView.swift in Sources */,
 				0F7A37C11A12F49A00BE2A06 /* Friend.swift in Sources */,
 				0F27C6541A07D1CB004A2355 /* ViewLoggingIn.swift in Sources */,
 				0FA7AFB81A09A50400526C84 /* PhotoThumbnail.swift in Sources */,
