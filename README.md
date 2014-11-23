@@ -9,3 +9,6 @@ Perfom seguers (cambiar a otra vista de navegación de manera condicional): http
 
 Activity Indicator:
 https://www.youtube.com/watch?v=iFF1c-RgMkU
+
+NSTimer con transiciones:
+https://www.youtube.com/watch?v=etqAOfMXbHc
