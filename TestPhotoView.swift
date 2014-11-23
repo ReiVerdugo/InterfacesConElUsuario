@@ -11,7 +11,22 @@ import Photos
 
 class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    var timer = NSTimer()
+    var timerCount = 0
+    
     @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var takePhotoButton: UIButton!
+    
+    @IBOutlet weak var labelView: UILabel!
+    
+    @IBOutlet weak var label2View: UILabel!
+    
+    @IBOutlet weak var takeAnotherButton: UIButton!
+    
+    @IBOutlet weak var useThisButton: UIButton!
+    
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     
     
     @IBAction func takePhotoButton(sender: UIButton) {
@@ -35,9 +50,43 @@ class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionVie
         }
     }
     
+    @IBAction func takeAnotherButtonPressed(sender: UIButton) {
+        takePhotoButton(sender)
+    }
+    
+    
+    @IBAction func cancelPressed(sender: UIButton) {
+        let alert = UIAlertController(title: "¿Estás seguro de que deseas salir?", message: "Perderás todo tu progreso.", preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "Sí", style: .Default, handler: {(alertAction)in
+            //Si decide salir de la lección
+            self.performSegueWithIdentifier("Main", sender: self)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: {(alertAction)in
+            //Si decide quedarse en la lección
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func useThisPressed(sender: UIButton) {
+        activity.hidden = false
+        activity.startAnimating()
+        self.timerCount = 0
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("goNext"), userInfo: nil, repeats: false)
+    }
+    
+    func goNext() {
+        activity.stopAnimating()
+        self.performSegueWithIdentifier("goNext", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        activity.hidden = true
+        activity.stopAnimating()
         // Do any additional setup after loading the view.
     }
     
@@ -50,6 +99,11 @@ class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionVie
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!){
         let image = info.objectForKey("UIImagePickerControllerOriginalImage") as UIImage
         imageView.image = image
+        takePhotoButton.hidden = true
+        labelView.hidden = false
+        label2View.hidden = false
+        takeAnotherButton.hidden = false
+        useThisButton.hidden = false
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     

@@ -63,7 +63,7 @@ class CameraPartsView: UIViewController {
     }
     
     @IBAction func disparador(sender: UIButton) {
-        let alert = UIAlertController(title: "Disparador", message: "Al ejecutor este botón se obtiene la imagen capturada.", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Disparador", message: "Al ejecutar este botón se obtiene la imagen capturada.", preferredStyle: .Alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: {(alertAction)in
             //

@@ -1,5 +1,5 @@
 //
-//  ExpositionView.swift
+//  FirstTryFailedView.swift
 //  PerfectPhoto
 //
 //  Created by Reinaldo Verdugo on 22/11/14.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-class ExpositionView: UIViewController {
+class FirstTryFailedView: UIViewController {
     
     
     @IBAction func cancelPressed(sender: UIButton) {
-        let alert = UIAlertController(title: "Abandonar lección", message: "¿Estás seguro de que deseas salir?", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "¿Estás seguro de que deseas salir?", message: "Perderás todo tu progreso.", preferredStyle: .Alert)
         
         alert.addAction(UIAlertAction(title: "Sí", style: .Default, handler: {(alertAction)in
             //Si decide salir de la lección
-            self.performSegueWithIdentifier("gotoMain", sender: self)
+            self.performSegueWithIdentifier("Main", sender: self)
         }))
         
         alert.addAction(UIAlertAction(title: "No", style: .Cancel, handler: {(alertAction)in
@@ -25,10 +25,14 @@ class ExpositionView: UIViewController {
         }))
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func cancelLessonPressed(sender: UIButton) {
+        self.cancelPressed(sender)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     

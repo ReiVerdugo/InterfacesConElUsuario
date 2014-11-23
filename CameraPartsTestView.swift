@@ -176,7 +176,8 @@ class CameraPartsTestView: UIViewController {
             //Si decide quedarse en la lección
             alert.dismissViewControllerAnimated(true, completion: nil)
         }))
-        self.presentViewController(alert, animated: true, completion: nil)    }
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "gotoSuccess") {
