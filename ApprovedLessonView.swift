@@ -24,6 +24,12 @@ class ApprovedLessonView: UIViewController {
 
     @IBOutlet weak var numVidasLabel: UILabel!
     
+    @IBAction func acceptButton(sender: UIButton) {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.introCompleted = true
+        self.performSegueWithIdentifier("fromSuccessToMain", sender: self)
+    }
+    
     @IBAction func shareButton(sender: UIButton) {
         var myShareRessult : String = "¡Aprobé la Lección \"Partes de la cámara\" en PerfectPhoto con \(self.numVidas) vidas restantes!"
         var imagen : UIImage = UIImage()
@@ -63,5 +69,6 @@ class ApprovedLessonView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 }

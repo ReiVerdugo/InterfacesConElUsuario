@@ -10,14 +10,29 @@ import UIKit
 
 class LessonsView: UIViewController {
     
+    var introCompleted : Bool = false
+
     
     @IBAction func introLessonPressed(sender: UIButton) {
         performSegueWithIdentifier("gotoLesson0", sender: self)
     }
 
     @IBAction func expoLessonPressed(sender: UIButton) {
-        performSegueWithIdentifier("gotoLesson1", sender: self)
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        let intro = appDelegate.introCompleted
+        if intro {
+            performSegueWithIdentifier("gotoLesson1", sender: self)
+        } else {
+            let alert = UIAlertController(title: "Atención", message: "Debes completar la lección de Introducción primero.", preferredStyle: .Alert)
+            
+            alert.addAction(UIAlertAction(title: "Aceptar", style: .Default, handler: {(alertAction)in
+                //
+                alert.dismissViewControllerAnimated(true, completion: nil)
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

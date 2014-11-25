@@ -19,7 +19,7 @@ class AprovedLesson2View: UIViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         appDelegate.newImage = original
         appDelegate.newImageFound = true
-        self.performSegueWithIdentifier("gotoGallery", sender: self)
+        self.performSegueWithIdentifier("goSuccess", sender: self)
     }
     
 

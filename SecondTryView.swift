@@ -30,6 +30,8 @@ class SecondTryView: UIViewController, UICollectionViewDelegate, UICollectionVie
     @IBOutlet weak var activity: UIActivityIndicatorView!
     
     
+    @IBOutlet weak var processingImage: UIButton!
+    
     @IBAction func takePhotoButton(sender: UIButton) {
         // Si la cámara está disponible
         if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
@@ -74,6 +76,7 @@ class SecondTryView: UIViewController, UICollectionViewDelegate, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         activity.hidden = true
+        processingImage.hidden = true
         activity.stopAnimating()
         // Do any additional setup after loading the view.
     }
@@ -81,6 +84,7 @@ class SecondTryView: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     @IBAction func useThisPressed(sender: UIButton) {
         activity.hidden = false
+        processingImage.hidden = false
         activity.startAnimating()
         self.timerCount = 0
         self.timer = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("goNext"), userInfo: nil, repeats: false)

@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ViewRegister: UIViewController {
+class ViewRegister: UIViewController, FBLoginViewDelegate {
     
     // Declaramos los objetos presentes en la ventana de registro
+    
+    @IBOutlet var fbLoginView : FBLoginView!
     
     // Campos de texto
     @IBOutlet weak var usrnameTextfield: UITextField!
@@ -97,10 +99,27 @@ class ViewRegister: UIViewController {
         }
     }
 
+    func loginViewShowingLoggedInUser(loginView : FBLoginView!) {
+        println("User Logged In")
+        performSegueWithIdentifier("successLogin", sender: self)
+    }
+    
+    func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser){
+        println("User Name: \(user.name)")
+    }
+    
+    func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
+        println("User Logged Out")
+    }
+    
+    func loginView(loginView : FBLoginView!, handleError:NSError) {
+        println("Error: \(handleError.localizedDescription)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.fbLoginView.delegate = self
+        self.fbLoginView.readPermissions = ["public_profile", "email", "user_friends"]
         // Do any additional setup after loading the view.
     }
 

@@ -14,6 +14,8 @@ class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionVie
     var timer = NSTimer()
     var timerCount = 0
     
+    @IBOutlet weak var processingImage: UIButton!
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var takePhotoButton: UIButton!
@@ -72,6 +74,7 @@ class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     @IBAction func useThisPressed(sender: UIButton) {
         activity.hidden = false
+        processingImage.hidden = false
         activity.startAnimating()
         self.timerCount = 0
         self.timer = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("goNext"), userInfo: nil, repeats: false)
@@ -86,6 +89,7 @@ class TestPhotoView: UIViewController, UICollectionViewDelegate, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         activity.hidden = true
+        processingImage.hidden = true
         activity.stopAnimating()
         // Do any additional setup after loading the view.
     }
