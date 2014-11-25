@@ -2268,10 +2268,10 @@
             </objects>
             <point key="canvasLocation" x="5480" y="2153"/>
         </scene>
-        <!--View Controller-->
+        <!--Aproved Lesson2 View-->
         <scene sceneID="EhZ-WE-Jb7">
             <objects>
-                <viewController id="nJU-A2-61E" sceneMemberID="viewController">
+                <viewController id="nJU-A2-61E" customClass="AprovedLesson2View" customModule="PerfectPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ft-aJ-KXH"/>
                         <viewControllerLayoutGuide type="bottom" id="Pib-b3-hNh"/>
@@ -2279,9 +2279,17 @@
                     <view key="view" contentMode="scaleToFill" id="tDM-eX-Uao">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG7-Xg-J96">
+                                <rect key="frame" x="21" y="97" width="278" height="364"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="kG7-Xg-J96" id="aBl-WL-n7h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3N-r8-cuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@ class ThirdTryView: UIViewController, UICollectionViewDelegate, UICollectionView
 
     var timer = NSTimer()
     var timerCount = 0
+    var original : UIImage = UIImage()
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -99,6 +100,7 @@ class ThirdTryView: UIViewController, UICollectionViewDelegate, UICollectionView
     func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!){
         let image = info.objectForKey("UIImagePickerControllerOriginalImage") as UIImage
         imageView.image = image
+        self.original = image
         takePhotoButton.hidden = true
         labelView.hidden = false
         label2View.hidden = false
@@ -109,5 +111,13 @@ class ThirdTryView: UIViewController, UICollectionViewDelegate, UICollectionView
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController!){
         picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "goNext") {
+            let controller : AprovedLesson2View = segue.destinationViewController as AprovedLesson2View
+            controller.original = self.original
+            
+        }
     }
 }
