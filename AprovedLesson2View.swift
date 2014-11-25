@@ -13,12 +13,16 @@ class AprovedLesson2View: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     
+    var original : UIImage = UIImage()
     
     @IBAction func yesButton(sender: UIButton) {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.newImage = original
+        appDelegate.newImageFound = true
         self.performSegueWithIdentifier("gotoGallery", sender: self)
     }
     
-    var original : UIImage = UIImage()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +35,4 @@ class AprovedLesson2View: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if (segue.identifier == "gotoGallery") {
-            let controller : ViewGallery = segue.destinationViewController as ViewGallery
-            
-            controller.newPhotoFound = true
-            controller.newPhoto = original
-        }
-    }
 }

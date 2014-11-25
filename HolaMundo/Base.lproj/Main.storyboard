@@ -2298,12 +2298,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageView" destination="kG7-Xg-J96" id="aBl-WL-n7h"/>
-                        <segue destination="EZ1-UA-5Mq" kind="show" identifier="gotoGallery" id="132-Mr-oJv"/>
+                        <segue destination="sOt-Ax-JYB" kind="presentation" identifier="gotoGallery" modalTransitionStyle="crossDissolve" id="5yp-Ts-Q5J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3N-r8-cuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5965" y="2153"/>
+            <point key="canvasLocation" x="5875" y="2153"/>
         </scene>
         <!--Camera Parts View-->
         <scene sceneID="5U0-K6-ZFT">
@@ -2915,12 +2915,11 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fv5-I8-HOK"/>
+        <segue reference="5yp-Ts-Q5J"/>
         <segue reference="KfJ-tL-n7C"/>
         <segue reference="cg2-Kp-aDX"/>
-        <segue reference="HwC-7t-Ltz"/>
         <segue reference="9OK-Xo-vuo"/>
-        <segue reference="132-Mr-oJv"/>
+        <segue reference="HwC-7t-Ltz"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

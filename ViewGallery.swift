@@ -17,8 +17,6 @@ class ViewGallery: UIViewController, UICollectionViewDataSource, UICollectionVie
     var albumFound : Bool = false   // Variable que nos dirá si se consiguió algún álbum con ese nombre
     var assetCollection: PHAssetCollection!
     var photoAsset: PHFetchResult!  // Arreglo que contendrá las fotos contenidas en el album
-    var newPhotoFound : Bool = false
-    var newPhoto : UIImage = UIImage()
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -61,9 +59,11 @@ class ViewGallery: UIViewController, UICollectionViewDataSource, UICollectionVie
                 })
         }
         
-        if newPhotoFound {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        if (appDelegate.newImageFound == true) {
+            appDelegate.newImageFound = false
             PHPhotoLibrary.sharedPhotoLibrary().performChanges({
-                let createAssetRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(self.newPhoto)
+                let createAssetRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(appDelegate.newImage)
                 let assetPlaceholder = createAssetRequest.placeholderForCreatedAsset
                 let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection, assets: self.photoAsset)
                 albumChangeRequest.addAssets([assetPlaceholder])
