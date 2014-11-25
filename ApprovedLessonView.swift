@@ -16,6 +16,8 @@ class ApprovedLessonView: UIViewController {
     
     @IBOutlet weak var vida2: UIImageView!
     
+    @IBOutlet var goldBadge: UIImageView!
+    
     @IBOutlet weak var silverBadge: UIImageView!
     
     @IBOutlet weak var bronzeBadge: UIImageView!
@@ -24,8 +26,18 @@ class ApprovedLessonView: UIViewController {
     
     @IBAction func shareButton(sender: UIButton) {
         var myShareRessult : String = "¡Aprobé la Lección \"Partes de la cámara\" en PerfectPhoto con \(self.numVidas) vidas restantes!"
-        
-        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: [myShareRessult], applicationActivities: nil)
+        var imagen : UIImage = UIImage()
+        if numVidas == 3 {
+            imagen = goldBadge.image!
+        }
+        else if numVidas == 2 {
+            imagen = silverBadge.image!
+        }
+        else {
+            imagen = bronzeBadge.image!
+        }
+
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: [myShareRessult, imagen], applicationActivities: nil)
         self.presentViewController(activityVC, animated: true, completion: nil)
     }
     

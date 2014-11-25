@@ -2654,10 +2654,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraGold" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-F9-tLc">
                                 <rect key="frame" x="55" y="227" width="211" height="211"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraBronze" translatesAutoresizingMaskIntoConstraints="NO" id="hPU-p4-FYg">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraSilver" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-1S-4VZ">
                                 <rect key="frame" x="55" y="227" width="211" height="211"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraSilver" translatesAutoresizingMaskIntoConstraints="NO" id="FqW-1S-4VZ">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraBronze" translatesAutoresizingMaskIntoConstraints="NO" id="hPU-p4-FYg">
                                 <rect key="frame" x="55" y="227" width="211" height="211"/>
                             </imageView>
                         </subviews>
@@ -2666,6 +2666,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bronzeBadge" destination="hPU-p4-FYg" id="aTT-Ve-Yag"/>
+                        <outlet property="goldBadge" destination="eEW-F9-tLc" id="GjF-pb-7m0"/>
                         <outlet property="numVidasLabel" destination="5X2-nX-Uul" id="fx1-PH-AFz"/>
                         <outlet property="silverBadge" destination="FqW-1S-4VZ" id="glA-pc-9jv"/>
                         <outlet property="vida1" destination="e5j-Gs-yRv" id="oLj-MG-9cG"/>

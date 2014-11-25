@@ -18,6 +18,13 @@ class ViewPhoto: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     
     @IBAction func btnExport(sender: UIBarButtonItem) {
+        var myShareRessult : String = "¡Foto aprobada correspondiente a la Lección \"Exposición\" en PerfectPhoto!"
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
+        var imagen : UIImage = appDelegate.newImage
+        
+        let activityVC : UIActivityViewController = UIActivityViewController(activityItems: [myShareRessult, imagen], applicationActivities: nil)
+        self.presentViewController(activityVC, animated: true, completion: nil)
     }
     
     @IBAction func btnTrash(sender : AnyObject) {
