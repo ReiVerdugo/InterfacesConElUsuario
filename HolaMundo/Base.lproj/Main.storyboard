@@ -2283,17 +2283,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kG7-Xg-J96">
                                 <rect key="frame" x="21" y="97" width="278" height="364"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yty-PJ-9eA">
+                                <rect key="frame" x="143" y="501" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yesButton:" destination="nJU-A2-61E" eventType="touchUpInside" id="kAZ-Wm-N3D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageView" destination="kG7-Xg-J96" id="aBl-WL-n7h"/>
+                        <segue destination="EZ1-UA-5Mq" kind="show" identifier="gotoGallery" id="132-Mr-oJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3N-r8-cuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5917" y="2535"/>
+            <point key="canvasLocation" x="5965" y="2153"/>
         </scene>
         <!--Camera Parts View-->
         <scene sceneID="5U0-K6-ZFT">
@@ -2905,11 +2915,12 @@
         <image name="whiteCircle" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="B6I-tQ-zJG"/>
+        <segue reference="fv5-I8-HOK"/>
         <segue reference="KfJ-tL-n7C"/>
         <segue reference="cg2-Kp-aDX"/>
         <segue reference="HwC-7t-Ltz"/>
         <segue reference="9OK-Xo-vuo"/>
+        <segue reference="132-Mr-oJv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

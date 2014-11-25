@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import Photos
 
 class AprovedLesson2View: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
+    
+    
+    @IBAction func yesButton(sender: UIButton) {
+        self.performSegueWithIdentifier("gotoGallery", sender: self)
+    }
     
     var original : UIImage = UIImage()
     
@@ -25,4 +31,13 @@ class AprovedLesson2View: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "gotoGallery") {
+            let controller : ViewGallery = segue.destinationViewController as ViewGallery
+            
+            controller.newPhotoFound = true
+            controller.newPhoto = original
+        }
+    }
 }
